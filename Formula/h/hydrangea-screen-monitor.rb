@@ -8,6 +8,7 @@ class HydrangeaScreenMonitor < Formula
   license "MIT"
 
   depends_on "python@3.11"
+  depends_on "sshpass"
 
   def install
     venv = virtualenv_create(libexec, "python3")
