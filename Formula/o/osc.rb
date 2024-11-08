@@ -3,8 +3,8 @@ class Osc < Formula
 
   desc "Command-line interface to work with an Open Build Service"
   homepage "https://openbuildservice.org"
-  url "https://github.com/openSUSE/osc/archive/refs/tags/1.9.2.tar.gz"
-  sha256 "c32bcf47c8a0f23a722fca781959ef2b1f865d0d4ed32be237f3e4444e671864"
+  url "https://github.com/openSUSE/osc/archive/refs/tags/1.10.0.tar.gz"
+  sha256 "aa0bdace3390d594d0332b4e747e2b7fba31343b3385f8d973ddae4ca9c39c5a"
   license "GPL-2.0-or-later"
   head "https://github.com/openSUSE/osc.git", branch: "master"
 
@@ -14,13 +14,12 @@ class Osc < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e1f568428057edf8e1f160d9c5d82f32bbdb11fd604d6b595c6eec92e9f3177b"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "e1f568428057edf8e1f160d9c5d82f32bbdb11fd604d6b595c6eec92e9f3177b"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "e1f568428057edf8e1f160d9c5d82f32bbdb11fd604d6b595c6eec92e9f3177b"
-    sha256 cellar: :any_skip_relocation, sonoma:        "b13d67cd299b39bccb518ddd249031e6337149d1c173960a971e2ac071796922"
-    sha256 cellar: :any_skip_relocation, ventura:       "b13d67cd299b39bccb518ddd249031e6337149d1c173960a971e2ac071796922"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e1f568428057edf8e1f160d9c5d82f32bbdb11fd604d6b595c6eec92e9f3177b"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "3126c55c04f00ba119676fe2fd2a7d9c5d06b0adbe2d40e1cd824e05c7fbd008"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "3126c55c04f00ba119676fe2fd2a7d9c5d06b0adbe2d40e1cd824e05c7fbd008"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "3126c55c04f00ba119676fe2fd2a7d9c5d06b0adbe2d40e1cd824e05c7fbd008"
+    sha256 cellar: :any_skip_relocation, sonoma:        "4bc2e594deede859deb2c315b913cf3fa7bd2c922f81873d179edb31d50923ab"
+    sha256 cellar: :any_skip_relocation, ventura:       "4bc2e594deede859deb2c315b913cf3fa7bd2c922f81873d179edb31d50923ab"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3126c55c04f00ba119676fe2fd2a7d9c5d06b0adbe2d40e1cd824e05c7fbd008"
   end
 
   depends_on "cryptography"

@@ -2238,6 +2238,7 @@ pipx
 pivit
 pixi
 pixie
+pixman
 pkgconf
 pkl
 plantuml
